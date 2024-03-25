@@ -1,3 +1,4 @@
+
 .navDashboard
 {
     display: flex;
@@ -5,10 +6,12 @@
     padding: 0;
     margin: 0;
     height: 100vh;
-    width: 500px;
+    width: 320px;
     background-color: blueviolet;
     align-items: center;
 }
+
+
 
 .navDashboard__ul
 {
@@ -21,19 +24,43 @@
 .navDashboard__li
 {
     padding: 14px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background .5s ease-out;
+    -moz-transition: background .5s ease-out;
+    -webkit-transition: background .5s ease-out;
+    -o-transition: background .5s ease-out
 }
 
 .navDashboard__li:hover
 {
-    background-color: black;
-    animation-duration: 1s;
-    transition: ease-in;
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+    
+}
+
+.icon
+{
+  color: E2CBF9;
+  background-color: #705788;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 5px;
+  height: 30px;
+  width: 30px;
+  display: none;
+  position: absolute;
+  top:0;
 }
 
 @media only screen and (max-width: 481px) {
   .navDashboard
   {
     display: none;
+  }
+
+  .navDashboard.mobile
+  {
+    display: flex;
   }
 }
  
@@ -42,8 +69,35 @@
     {
       display: none;
     }
+    .icon
+    {
+      display: flex;
+      z-index: 10;
+    }
+    .navDashboard.mobile
+    {
+      display: flex; 
+      flex-direction: row;  
+      height: 100vh;
+      width: 100%;
+      background-color: blueviolet;
+      align-items: center; 
+      animation: fadeIn 0.5s forwards; /* Add fadeIn animation */
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
 }
  
 @media only screen and (max-width: 1026px) {
-  
+  .navDashboard
+    {
+      width: 250px;
+    }
 }
