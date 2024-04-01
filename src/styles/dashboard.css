@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     height: 100vh;
-    width: 320px;
+    width: 20%;
     background-color: blueviolet;
     align-items: center;
 }
@@ -55,19 +55,28 @@
 @media only screen and (max-width: 481px) {
   .navDashboard
   {
-    display: none;
+    display: flex;
+    opacity: 0;
+    transition: 0.5s;
+    width: 100%;
   }
 
   .navDashboard.mobile
   {
     display: flex;
+    opacity: 1;
+    width: 100%;
+    transition: 0.5s;
   }
 }
  
 @media only screen and (max-width: 769px) {
     .navDashboard
     {
-      display: none;
+      display: flex;
+      opacity: 0;
+      width: 100%;
+      transition: opacity 0.5s;
     }
     .icon
     {
@@ -82,22 +91,8 @@
       width: 100%;
       background-color: blueviolet;
       align-items: center; 
-      animation: fadeIn 0.5s forwards; /* Add fadeIn animation */
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+      opacity: 1;
+      transition: opacity 0.5s;
     }
 }
  
-@media only screen and (max-width: 1026px) {
-  .navDashboard
-    {
-      width: 250px;
-    }
-}
