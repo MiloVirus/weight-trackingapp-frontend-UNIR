@@ -1,8 +1,7 @@
  import "../styles/dashboard.css"
  import { useEffect, useState } from "react"
  import { FaBars } from "react-icons/fa";
-
-
+import UserNav from "./UserNav";
 
 const Dashboard = () => {
 
@@ -28,6 +27,7 @@ const Dashboard = () => {
 
   return (
     <>
+    <UserNav/>
     <nav className={onSwitch ? "navDashboard mobile" : "navDashboard" }>
         <ul className="navDashboard__ul">
             <li className="navDashboard__li">

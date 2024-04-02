@@ -5,7 +5,7 @@
     flex-direction: row;
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: 93vh;
     width: 20%;
     background-color: blueviolet;
     align-items: center;
@@ -43,7 +43,7 @@
   color: E2CBF9;
   background-color: #705788;
   border-radius: 5px;
-  margin: 20px;
+  margin: 10px;
   padding: 5px;
   height: 30px;
   width: 30px;
@@ -87,7 +87,7 @@
     {
       display: flex; 
       flex-direction: row;  
-      height: 100vh;
+      height: 93vh;
       width: 100%;
       background-color: blueviolet;
       align-items: center; 

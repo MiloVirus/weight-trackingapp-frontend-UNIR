@@ -1,12 +1,12 @@
 import './App.css'
-import Dashboard from './components/Dashboard'
+import UserPanel from './components/UserPanel'
 
 function App() {
  
 
   return (
     <>
-     <Dashboard/>
+     <UserPanel/>
     </>
   )
 }
