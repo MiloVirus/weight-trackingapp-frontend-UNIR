@@ -5,14 +5,11 @@
     flex-direction: row;
     padding: 0;
     margin: 0;
-    height: 93vh;
+    height: 100vh;
     width: 20%;
     background-color: blueviolet;
     align-items: center;
 }
-
-
-
 .navDashboard__ul
 {
     list-style: none;
@@ -20,7 +17,6 @@
     font-size: 25px;
     width: 100%;
 }
-
 .navDashboard__li
 {
     padding: 14px;
@@ -30,20 +26,18 @@
     -webkit-transition: background .5s ease-out;
     -o-transition: background .5s ease-out
 }
-
 .navDashboard__li:hover
 {
   background-color: rgba(0, 0, 0, 1);
   cursor: pointer;
     
 }
-
 .icon
 {
   color: E2CBF9;
   background-color: #705788;
   border-radius: 5px;
-  margin: 10px;
+  margin: 4px;
   padding: 5px;
   height: 30px;
   width: 30px;
@@ -67,6 +61,7 @@
     opacity: 1;
     width: 100%;
     transition: 0.5s;
+    
   }
 }
  
@@ -77,6 +72,7 @@
       opacity: 0;
       width: 100%;
       transition: opacity 0.5s;
+      position: absolute;
     }
     .icon
     {
@@ -87,12 +83,13 @@
     {
       display: flex; 
       flex-direction: row;  
-      height: 93vh;
+      height: 100vh;
       width: 100%;
       background-color: blueviolet;
       align-items: center; 
       opacity: 1;
       transition: opacity 0.5s;
+      position: absolute;
     }
 }
  

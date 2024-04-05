@@ -1,7 +1,6 @@
- import "../styles/dashboard.css"
- import { useEffect, useState } from "react"
- import { FaBars } from "react-icons/fa";
-import UserNav from "./UserNav";
+import "../styles/dashboard.css"
+import { useEffect, useState } from "react"
+import { FaBars } from "react-icons/fa";
 
 const Dashboard = () => {
 
@@ -25,9 +24,8 @@ const Dashboard = () => {
     }, [])
 
 
-  return (
+return (
     <>
-    <UserNav/>
     <nav className={onSwitch ? "navDashboard mobile" : "navDashboard" }>
         <ul className="navDashboard__ul">
             <li className="navDashboard__li">
@@ -45,7 +43,7 @@ const Dashboard = () => {
         <FaBars onClick={switchSelection} className="icon"/>
     </div>
     </>
-  )
+)
 }
 
 export default Dashboard
