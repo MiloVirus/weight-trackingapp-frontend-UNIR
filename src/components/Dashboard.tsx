@@ -1,20 +1,17 @@
 import "../styles/dashboard.css"
-import { useEffect, useState } from "react"
+import { useEffect} from "react"
 import { FaBars } from "react-icons/fa";
+import useToggleHook from "./useToggleHook";
 
 const Dashboard = () => {
 
-    const [onSwitch, setOnSwitch] = useState(false)
-
-    const switchSelection = () => {
-        setOnSwitch(!onSwitch)
-    }
+    const [active, handleToggle] = useToggleHook(false)
 
     const handleResize = () => {
         if(window.innerWidth < 720)
         { }
         else{
-            setOnSwitch(false)
+            handleToggle
         }
     }
 
@@ -26,7 +23,7 @@ const Dashboard = () => {
 
 return (
     <>
-    <nav className={onSwitch ? "navDashboard mobile" : "navDashboard" }>
+    <nav className={active ? "navDashboard mobile" : "navDashboard" }>
         <ul className="navDashboard__ul">
             <li className="navDashboard__li">
                 <p>Graphic</p>
@@ -40,7 +37,7 @@ return (
         </ul>
     </nav>
     <div>
-        <FaBars onClick={switchSelection} className="icon"/>
+        <FaBars onClick={handleToggle} className="icon"/>
     </div>
     </>
 )

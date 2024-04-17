@@ -1,24 +1,21 @@
-import { useState } from 'react'
 import logo from '../../public/img/WIN_20240401_16_41_57_Pro.jpg'
 import "../styles/UserNav.css"
+import { FaBars } from "react-icons/fa";
+import useToggleHook from './useToggleHook'
 
 const UserNav = () => {
 
-  const [toggle, setToggle] = useState(false)
+  const [active, handleToggle] = useToggleHook(false)
 
-  const handleToggle = () =>
-  {
-    setToggle(!toggle)
-  }
 
   return (
     <>
     <nav className="userNavigation">
         <img className="userNavigation__img" src={logo}/>
         <p className='userNavigation__p'>Username</p>
-        <button onClick={handleToggle} className='userNavigation__button'>v</button>
+        <FaBars onClick={handleToggle} className='userNavigation__button'/>
     </nav>
-    <div className={toggle ? 'dropDownMenu': 'dropDownMenu hidden'}>
+    <div className={active ? 'dropDownMenu': 'dropDownMenu hidden'}>
       <ul>
         <li className='dropDownMenu__li'>Profile</li>
         <li className='dropDownMenu__li'>Settings</li>

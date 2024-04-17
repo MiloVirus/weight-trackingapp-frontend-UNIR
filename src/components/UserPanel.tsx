@@ -27,11 +27,10 @@ const UserPanel = () => {
                 <section className='userPanel__section--chart'>
                   <Chart />
                 </section>
-                
             </article>
         </section>
         <section>
-          
+        
         </section>
     </section>
     </>
