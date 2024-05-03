@@ -1,12 +1,10 @@
 import './App.css'
-import UserPanel from './components/UserPanel'
+import UserPanel from './pages/UserPanel'
 
 function App() {
- 
-
   return (
     <>
-     <UserPanel/>
+      
     </>
   )
 }

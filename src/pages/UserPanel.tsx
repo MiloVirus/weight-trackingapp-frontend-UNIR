@@ -1,8 +1,8 @@
-import Dashboard from './Dashboard'
-import UserNav from './UserNav'
+import Dashboard from '../components/Dashboard'
+import UserNav from '../components/UserNav'
 import '../styles/UserPanel.css'
-import { Chart } from './Chart';
-import Card from './Card';
+import { Chart } from '../components/Chart';
+import Card from '../components/Card';
 
 const UserPanel = () => {
 

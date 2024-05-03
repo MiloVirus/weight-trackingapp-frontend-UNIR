@@ -1,7 +1,7 @@
 import "../styles/dashboard.css"
 import { useEffect} from "react"
 import { FaBars } from "react-icons/fa";
-import useToggleHook from "./useToggleHook";
+import useToggleHook from "../hooks/useToggleHook";
 
 const Dashboard = () => {
 
@@ -9,7 +9,9 @@ const Dashboard = () => {
 
     const handleResize = () => {
         if(window.innerWidth < 720)
-        { }
+        { 
+            
+        }
         else{
             handleToggle
         }

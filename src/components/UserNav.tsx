@@ -1,7 +1,8 @@
-import logo from '../../public/img/WIN_20240401_16_41_57_Pro.jpg'
+import logo from '../img/WIN_20240401_16_41_57_Pro.jpg'
 import "../styles/UserNav.css"
 import { FaBars } from "react-icons/fa";
-import useToggleHook from './useToggleHook'
+import useToggleHook from '../hooks/useToggleHook'
+import { Link } from 'react-router-dom';
 
 const UserNav = () => {
 
@@ -10,17 +11,25 @@ const UserNav = () => {
 
   return (
     <>
-    <nav className="userNavigation">
-        <img className="userNavigation__img" src={logo}/>
-        <p className='userNavigation__p'>Username</p>
-        <FaBars onClick={handleToggle} className='userNavigation__button'/>
-    </nav>
-    <div className={active ? 'dropDownMenu': 'dropDownMenu hidden'}>
-      <ul>
-        <li className='dropDownMenu__li'>Profile</li>
-        <li className='dropDownMenu__li'>Settings</li>
-        <li className='dropDownMenu__li'>Logout</li>
-      </ul>
+    <div className="container">
+      <nav className="userNavigation">
+          <div className='userNavigation__div--container1'>
+          <div className='userNavigation__option'><Link to="/">Home</Link></div>
+            <div className='userNavigation__option'>About</div>
+          </div>
+          <div className='userNavigation__div--container2'>
+            <img className="userNavigation__img" src={logo}/>
+            <p className='userNavigation__p'>Username</p>
+            <FaBars onClick={handleToggle} className='userNavigation__button'/> 
+          </div>
+      </nav>
+      <div className={active ? 'dropDownMenu': 'dropDownMenu hidden'}>
+        <ul className='dropDownMenu__ul'>
+          <li className='dropDownMenu__li'>Profile</li>
+          <li className='dropDownMenu__li'>Settings</li>
+          <li className='dropDownMenu__li'>Logout</li>
+        </ul>
+      </div>
     </div>
     </>
   )

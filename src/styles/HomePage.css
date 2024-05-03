@@ -1,0 +1,122 @@
+header{
+    position: fixed;
+    width: 100%;
+}
+.mainSection__article--banner
+{
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(36, 36, 36, 0.5)), url("../img/bannerStart.jpg");
+    background-size: cover;
+    margin: 0;
+    height: 500px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+}
+.mainSection__button
+{
+    background-color: rgb(139, 3, 180);
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+.mainSection__p
+{
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+a 
+{
+    color: inherit; /* or specify the color you want */
+    text-decoration: none; /* optional: remove underline */
+}
+
+.mainSection__button:hover
+{
+    background-color: rgb(212, 21, 212);
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.mainSection__article--content
+{
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSection__h1--banner
+{
+    font-size: 40px;
+    padding: 20px;
+    margin: 0;
+    color: white;
+}
+
+.mainSection__h1--content
+{
+    font-size: 20px;
+    padding: 15px;
+    margin: 0;
+    color:black;
+    text-align: center;
+}
+
+.mainSection__img--content
+{
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+}
+
+.mainSection__h1--excPlan
+{
+    font-size: 20px;
+    padding: 15px;
+    margin: 0;
+    color:black;
+    text-align: center;
+}
+
+@media only screen and (max-width: 481px) {
+    .mainSection__article--banner
+    {
+        padding-top: 80px;
+        height: 200px; 
+    }
+
+    .mainSection__h1--banner
+    {
+        font-size: 20px;
+    }
+
+    .mainSection__img--content
+    {
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .mainSection__h1--excPlan
+    {
+        font-size: 16px;
+    }
+
+    .mainSection__h1--content
+    {
+        font-size: 16px;
+    }
+}
