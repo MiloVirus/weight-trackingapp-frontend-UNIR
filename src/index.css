@@ -14,13 +14,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+a 
+{
+    color: inherit; /* or specify the color you want */
+    text-decoration: none; /* optional: remove underline */
 }
-a:hover {
-  color: #535bf2;
+
+a:hover 
+{
+    color: inherit; /* or specify the color you want */
+    text-decoration: none; /* optional: remove underline */
 }
 
 body

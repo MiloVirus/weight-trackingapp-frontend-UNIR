@@ -14,7 +14,7 @@ const UserNav = () => {
     <div className="container">
       <nav className="userNavigation">
           <div className='userNavigation__div--container1'>
-          <div className='userNavigation__option'><Link to="/">Home</Link></div>
+          <Link to="/"><div className='userNavigation__option'>Home</div></Link>
             <div className='userNavigation__option'>About</div>
           </div>
           <div className='userNavigation__div--container2'>
