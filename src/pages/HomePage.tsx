@@ -17,6 +17,7 @@ const HomePage = () => {
           </h1>
           <button className="mainSection__button">Sign up now</button>
           <p className="mainSection__p"><Link to="/UserPanel">Enter as a guest</Link></p>
+          <p className="mainSection__p"><Link to="/Login">Login</Link></p>
         </div>
       </article>
       <article className="mainSection__article--content">

@@ -1,15 +1,19 @@
 import { FormEvent, useState } from "react"
 import { loginService } from "../services/userService"
+import { loginUser } from "../store/UserSlice"
+import { useAppDispatch } from "../hooks/reduxHooks"
 
 const Login = () => {
     
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const dispatch = useAppDispatch()
 
     const handleSubmitForm = (e:FormEvent) =>
     {
         e.preventDefault()
-        loginService({email, password})
+        dispatch(loginUser({email, password}))
+        //loginService({email, password})
     }
 
   return (
