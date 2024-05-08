@@ -1,7 +1,7 @@
 .userPanel
 {
     display: flex;
-    flex-wrap: nowrap;
+    width: 80%;
     height: 100vh;
 }
 .userPanel__section--userData
@@ -33,11 +33,23 @@ hr
     height: 100%;
 }
 
+@media only screen and (max-width: 769px) {
+    .userPanel
+    {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 481px) {
+    .userPanel
+    {
+        width: 100%;
+    }
     .userPanel__section--userData
     {
         width: 100%;
         color: #000000;
-        padding: 0;
+        padding: 4%;
     }
 }
+

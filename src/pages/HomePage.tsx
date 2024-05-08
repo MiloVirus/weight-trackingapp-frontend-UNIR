@@ -16,7 +16,7 @@ const HomePage = () => {
             FitAll tracks your weight progress
           </h1>
           <button className="mainSection__button">Sign up now</button>
-          <p className="mainSection__p"><Link to="/UserPanel">Enter as a guest</Link></p>
+          <p className="mainSection__p"><Link to="/UserProfile">Enter as a guest</Link></p>
           <p className="mainSection__p"><Link to="/Login">Login</Link></p>
         </div>
       </article>

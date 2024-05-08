@@ -1,5 +1,3 @@
-import Dashboard from '../components/Dashboard'
-import UserNav from '../components/UserNav'
 import '../styles/UserPanel.css'
 import { Chart } from '../components/Chart';
 import Card from '../components/Card';
@@ -12,9 +10,7 @@ const UserPanel = () => {
   console.log(currentDate);
   return (
     <>
-    <UserNav/>
     <section className='userPanel'>
-        <Dashboard/>
         <section className="userPanel__section--userData">
             <article className="userPanel__article">
                 <h3>Welcome, Username</h3>

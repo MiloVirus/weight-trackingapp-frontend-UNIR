@@ -1,25 +1,21 @@
-.card
-{
-    background-color: #E4E5E6;
+.card {
+    background-color: #e4e5e6;
     width: 150px;
     border-radius: 20px;
     padding: 20px;
 }
 
-.card__div--title
-{
+.card__div--title {
     font-size: 15px;
 }
 
-.card__div--info
-{
+.card__div--info {
     font-size: 22px;
     font-weight: 600;
 }
 
 @media only screen and (max-width: 481px) {
-   .card
-   {
-    width: 120px;
-   }
-  }
+    .card {
+        width: 100%;
+    }
+}

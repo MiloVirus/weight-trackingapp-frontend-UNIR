@@ -1,0 +1,35 @@
+.LoginContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+.LoginContainer__form 
+{
+    background-color: gray;
+    border-radius: 20px;
+    padding: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+.LoginContainer__div
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.LoginContainer__label
+{
+    width: 100%;
+    padding: 5px;
+}
+
+.LoginContainer__input
+{
+    width: 100%;
+    height: 25px;
+}

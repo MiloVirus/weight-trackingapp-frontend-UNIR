@@ -1,95 +1,91 @@
+.navDashboard {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 20%;
+  background-color: blueviolet;
+  align-items: center;
+}
 
-.navDashboard
-{
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    width: 20%;
-    background-color: blueviolet;
-    align-items: center;
+.navDashboard__ul {
+  list-style: none;
+  padding: 0;
+  font-size: 25px;
+  width: 100%;
 }
-.navDashboard__ul
-{
-    list-style: none;
-    padding: 0;
-    font-size: 25px;
-    width: 100%;
+
+.navDashboard__li {
+  padding: 14px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background .5s ease-out;
+  -moz-transition: background .5s ease-out;
+  -webkit-transition: background .5s ease-out;
+  -o-transition: background .5s ease-out
 }
-.navDashboard__li
-{
-    padding: 14px;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background .5s ease-out;
-    -moz-transition: background .5s ease-out;
-    -webkit-transition: background .5s ease-out;
-    -o-transition: background .5s ease-out
-}
-.navDashboard__li:hover
-{
+
+.navDashboard__li:hover {
   background-color: rgba(0, 0, 0, 1);
   cursor: pointer;
-    
+
 }
-.icon
-{
+
+.icon {
   color: E2CBF9;
   background-color: #705788;
   border-radius: 5px;
   margin: 4px;
+  margin: 10px 10px 10px 10px;
   padding: 5px;
   height: 30px;
   width: 30px;
   display: none;
   position: absolute;
-  top:0;
+  top: 0;
 }
 
 @media only screen and (max-width: 481px) {
-  .navDashboard
-  {
+  .navDashboard {
     display: flex;
     opacity: 0;
     transition: 0.5s;
     width: 100%;
   }
 
-  .navDashboard.mobile
-  {
+  .navDashboard.mobile {
     display: flex;
     opacity: 1;
     width: 100%;
     transition: 0.5s;
-    
+
   }
 }
- 
+
 @media only screen and (max-width: 769px) {
-    .navDashboard
-    {
-      display: flex;
-      opacity: 0;
-      width: 100%;
-      transition: opacity 0.5s;
-      position: absolute;
-    }
-    .icon
-    {
-      display: flex;
-      z-index: 10;
-    }
-    .navDashboard.mobile
-    {
-      display: flex; 
-      flex-direction: row;  
-      height: 100vh;
-      width: 100%;
-      background-color: blueviolet;
-      align-items: center; 
-      opacity: 1;
-      transition: opacity 0.5s;
-      position: absolute;
-    }
+  .navDashboard {
+    display: flex;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 0.5s;
+    position: absolute;
+    text-align: center;
+  }
+
+  .icon {
+    display: flex;
+    z-index: 10;
+  }
+
+  .navDashboard.mobile {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s;
+    position: absolute;
+  }
 }
- 

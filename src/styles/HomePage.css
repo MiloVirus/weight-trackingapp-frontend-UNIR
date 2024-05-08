@@ -26,13 +26,6 @@ header{
     color: white;
     font-family: inherit;
 }
-.mainSection__p
-{
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: underline;
-    cursor: pointer;
-}
 
 .mainSection__button:hover
 {
@@ -43,6 +36,15 @@ header{
     font-weight: 600;
     cursor: pointer;
 }
+
+.mainSection__p
+{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 .mainSection__article--content
 {
