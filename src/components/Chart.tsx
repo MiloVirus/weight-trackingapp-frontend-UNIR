@@ -9,23 +9,44 @@ import {
   Tooltip,
   Legend
 } from "chart.js";
-import { lineChartData } from "./ChartData";
+import { RootState } from "../store"
+import { useSelector } from "react-redux"
 
-ChartJS.register(
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  LineElement,
-  Title,
-  Tooltip,
-  Legend
-)
+const Chart = () => {
+  const options = {};
 
-export const Chart = () => {
+  const userDataSelector = useSelector((state: RootState) => state.userData.data);
 
-  const options = {}
-  
-  
+  const labels = userDataSelector.map(item => item.date);
+  const data = userDataSelector.map(item => item.weight)
 
-  return <Line options={options} data={lineChartData}/>;
-};
+    ChartJS.register(
+      CategoryScale,
+      LinearScale,
+      PointElement,
+      LineElement,
+      Title,
+      Tooltip,
+      Legend
+    );
+
+
+  const lineChartData = {
+    labels: labels,
+    datasets: [
+      {
+        label: "Weight (Kg)",
+        data: data,
+        borderColor: "purple" 
+      }    
+    ]
+  };
+
+  return (
+    <>
+      <Line options={options} data={lineChartData}/>
+    </>
+  )
+}
+
+export default Chart;

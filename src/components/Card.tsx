@@ -1,7 +1,7 @@
 import "../styles/Card.css"
 
 interface CardProps {
-    Weight: string; // Specifying that Weight prop should be a string
+    Weight: number; // Specifying that Weight prop should be a string
     Title: string;
   }
 
@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({Weight, Title}) => {
                 <p>{Title}</p>
             </div>
             <div className="card__div--info">
-                <p>{Weight}</p>
+                <p>{Weight}Kg</p>
             </div>
         </article>
     </>
