@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom'
-import UserPanel from '../pages/UserPanel'
+import UserPanel from '../components/UserPanel'
 import HomePage from '../pages/HomePage'
 import Login from '../pages/Login'
 import UserProfile from '../pages/UserProfile'

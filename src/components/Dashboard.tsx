@@ -37,7 +37,7 @@ return (
             <li className="navDashboard__li" onClick={ ()=> onComponentChange("userData")}>
                 <p>User Data</p>
             </li>
-            <li className="navDashboard__li">
+            <li className="navDashboard__li" onClick={ ()=> onComponentChange("excercisePanel")}>
                 <p>Excercise Plan</p>
             </li>
         </ul>

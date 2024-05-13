@@ -1,6 +1,6 @@
 import '../styles/UserPanel.css'
-import Chart from '../components/Chart';
-import Card from '../components/Card';
+import Chart from './Chart';
+import Card from './Card';
 import { useEffect, useState } from 'react';
 import { useAppDispatch } from '../hooks/reduxHooks';
 import { getUserData, postUserData } from '../store/UserDataSlice';
@@ -12,9 +12,7 @@ const UserPanel = () => {
   let currentDate = new Date().toJSON().slice(0, 10)
   const dispatch = useAppDispatch()
   const userDataSelector = useSelector((state: RootState) => state.userData.data);
-  console.log(userDataSelector)
   const lastWeight = userDataSelector.slice(-1)
-  console.log(lastWeight[0]?.weight)
 
   const [dayWeight, setDayWeight] = useState(0)
 
@@ -26,12 +24,19 @@ const UserPanel = () => {
   
   const sendInput = () =>
     {
-      const data  = 
-      {
-        weight: dayWeight,
-        date: Date().toString()
-      }
-      dispatch(postUserData(data))
+      if(dayWeight > 0)
+        {
+              const data  = 
+              {
+                weight: dayWeight,
+                date: Date().toString()
+              }
+              dispatch(postUserData(data))
+        }
+        else{
+          alert('Please input a value greater than 0')
+        }
+      
     }
 
   console.log(currentDate);

@@ -1,5 +1,5 @@
 import './App.css'
-import UserPanel from './pages/UserPanel'
+import UserPanel from './components/UserPanel'
 
 function App() {
   return (
