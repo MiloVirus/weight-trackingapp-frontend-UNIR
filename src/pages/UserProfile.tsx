@@ -9,7 +9,8 @@ import { useState } from "react"
 
 const UserProfile = () => {
 
-    const [activeComponent, setActiveComponent] = useState<string>("userPanel"); // Initially set to Dashboard
+  const [activeComponent, setActiveComponent] = useState<string>("userPanel"); 
+  
 
   const handleComponentChange = (component: string) => {
     setActiveComponent(component);

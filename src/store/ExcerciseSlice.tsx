@@ -23,12 +23,13 @@ const initialState: dataState = {
     error: null,
 };
 
-const URL_AUTH = `$localhost:3000/excercises`;
+const URL_AUTH = `http://localhost:3000/excercises`;
 
 export const getExcercisesData = createAsyncThunk<excercisesResponse[]>("excercises/getExcercisesData", async()=>
 {
     try {
         const response = await axios.get(URL_AUTH)
+        console.log(response.data)
         return response.data
     } catch (error) {
         

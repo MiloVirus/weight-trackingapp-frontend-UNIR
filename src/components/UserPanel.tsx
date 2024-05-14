@@ -4,6 +4,7 @@ import Card from './Card';
 import { useEffect, useState } from 'react';
 import { useAppDispatch } from '../hooks/reduxHooks';
 import { getUserData, postUserData } from '../store/UserDataSlice';
+import { getExcercisesData } from '../store/ExcerciseSlice';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store';
 
@@ -19,6 +20,7 @@ const UserPanel = () => {
   useEffect(() => {
     
     dispatch(getUserData())
+    dispatch(getExcercisesData())
   
   }, [])
   

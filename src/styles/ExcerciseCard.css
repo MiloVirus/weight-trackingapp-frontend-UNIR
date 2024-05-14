@@ -1,0 +1,29 @@
+.excerciseCard
+{
+    color: rgb(255, 255, 255);
+    height: 130px;
+    width: 200px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(36, 36, 36, 0.1)), url("../img/pushup.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.excerciseCard__button
+{
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    height: 20px;
+    width: 20px;
+}
+
+.exerciseCard__buttonContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+}
