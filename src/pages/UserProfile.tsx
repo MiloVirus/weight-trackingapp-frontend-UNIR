@@ -20,10 +20,16 @@ const UserProfile = () => {
     <>
     <UserNav/>
     <div className="userContainer">
+      <div className="userContainer__div--dashboard">
         <Dashboard onComponentChange={handleComponentChange}/>
+      </div>
+      <div className="userContainer__div--userPanel">
         {activeComponent === "userPanel" && <UserPanel/>}
         {activeComponent === "userData" && <UserData/>}
         {activeComponent === "excercisePanel" && <ExcercisePanel />}
+      </div>
+        
+        
     </div>
     
     </>

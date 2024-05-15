@@ -3,12 +3,11 @@
     color: rgb(255, 255, 255);
     height: 130px;
     width: 200px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(36, 36, 36, 0.1)), url("../img/pushup.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     border-radius: 5px;
     padding: 10px;
+    margin: 5px;
 }
 
 .excerciseCard__button
@@ -26,4 +25,11 @@
     bottom: 0;
     right: 0;
     padding: 10px;
+}
+
+.CustomPlanContainer
+{
+    padding-top: 30px;
+    color: rgb(29, 29, 29);
+    text-align: center;
 }

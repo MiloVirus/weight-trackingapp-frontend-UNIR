@@ -5,6 +5,9 @@
     justify-content: space-between;
     background-color: #E4E5E6;
     position: relative;
+    position: fixed;
+    z-index: 200;
+    width: 100%;
 }
 
 .userNavigation__div--container1
@@ -72,8 +75,9 @@
     background-color: #525252;
     opacity: 1;
     text-align: center;
-    position: absolute;
+    position: fixed;
     max-height: 100%;
+    top: 63px;
     right: 0px;
     z-index: 100;
     transition: 0.9s;
@@ -112,15 +116,28 @@
         justify-content: flex-end;
         background-color: #E4E5E6;
         padding: 5px;
-        position: relative;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
     }
 
     .userNavigation__option
-{
-    padding: 10px;
-    color: #525252;
-    font-weight: 600;
-}
+    {
+        padding: 10px;
+        color: #525252;
+        font-weight: 600;
+    }
+    .userNavigation__button
+    {
+        width: 20px;
+        background-color: #525252;
+        padding: 3px;
+        border-radius: 4px;
+        font-weight: 600;
+        cursor: pointer;
+        z-index: 200;
+    }
+
 
 }
 

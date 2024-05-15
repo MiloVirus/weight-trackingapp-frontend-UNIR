@@ -7,6 +7,7 @@
   width: 20%;
   background-color: blueviolet;
   align-items: center;
+  position: fixed;
 }
 
 .navDashboard__ul {
@@ -64,17 +65,19 @@
 
 @media only screen and (max-width: 769px) {
   .navDashboard {
-    display: flex;
     opacity: 0;
-    width: 100%;
     transition: opacity 0.5s;
-    position: absolute;
+    position: fixed;
+    visibility: hidden;
+    z-index: 100;
     text-align: center;
+    width: 100%;
   }
 
   .icon {
     display: flex;
-    z-index: 10;
+    z-index: 200;
+    position: fixed;
   }
 
   .navDashboard.mobile {
@@ -84,8 +87,10 @@
     width: 100%;
     background-color: blueviolet;
     align-items: center;
+    text-align: center;
+    visibility: visible;
     opacity: 1;
     transition: opacity 0.5s;
-    position: absolute;
+    position: fixed;
   }
 }

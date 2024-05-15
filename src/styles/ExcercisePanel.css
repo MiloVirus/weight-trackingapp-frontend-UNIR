@@ -1,0 +1,31 @@
+.CardsContainer
+{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.CustomPlanContainer
+{
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 769px) {
+    .CardsContainer
+    {
+        margin-top: 40px;
+    }
+
+    .CustomPlanContainer
+    {
+        margin-top: 40px;
+    }
+
+}

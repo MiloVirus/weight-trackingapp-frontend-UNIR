@@ -13,7 +13,7 @@ export const ExcerciseCard: React.FC<componentProps> = ({name, description, diff
 
   return (
     <>
-      <section className='excerciseCard'>
+      <section className='excerciseCard' style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.55), rgba(36, 36, 36, 0.1)), url(${image_url})` }}>
         <div>
           <h2>{name}</h2>
         </div>

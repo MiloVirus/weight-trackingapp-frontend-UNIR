@@ -2,20 +2,13 @@ import { RootState } from "../store"
 import { useSelector } from "react-redux"
 import { useEffect } from "react"
 
-let data = {}
-
 const ChartData = () => {
     
     useEffect(() => {
         const userDataSelector = useSelector((state: RootState)=> state.userData.data)
-        data = userDataSelector
-        console.log(userDataSelector)
     }, [])
     
-    
 }
-
-console.log(data)
 
 export default ChartData
 export const lineChartData = 
