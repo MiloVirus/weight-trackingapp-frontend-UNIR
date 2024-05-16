@@ -49,10 +49,20 @@ header{
 .mainSection__article--content
 {
     display: flex;
+    margin-top: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainSection__article--excPlan
+{
+    display: flex;
     margin-top: 30px;
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .mainSection__h1--banner
@@ -74,6 +84,13 @@ header{
 }
 
 .mainSection__img--content
+{
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+}
+
+.mainSection__img--excPlan
 {
     width: 70%;
     border-radius: 20px;

@@ -20,6 +20,16 @@
     width: 20px;
 }
 
+.excerciseCard__button.disabled
+{
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(92, 92, 92);
+    height: 20px;
+    width: 20px;
+}
+
 .exerciseCard__buttonContainer {
     position: absolute;
     bottom: 0;

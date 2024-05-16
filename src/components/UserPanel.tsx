@@ -7,6 +7,7 @@ import { getUserData, postUserData } from '../store/UserDataSlice';
 import { getExcercisesData } from '../store/ExcerciseSlice';
 import { useSelector } from 'react-redux';
 import { RootState } from '../store';
+import { getUserExcercisesData } from '../store/UserExcerciseSlice';
 
 const UserPanel = () => {
 
@@ -21,6 +22,7 @@ const UserPanel = () => {
     
     dispatch(getUserData())
     dispatch(getExcercisesData())
+    dispatch(getUserExcercisesData())
   
   }, [])
   

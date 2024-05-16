@@ -1,6 +1,7 @@
 import GuestNav from "../components/GuestNav"
 import "../styles/HomePage.css"
 import bannerGraph from "../img/bannergGraph.png"
+import bannerExc from "../img/excplan.png"
 import { Link } from "react-router-dom"
 
 const HomePage = () => {
@@ -33,6 +34,7 @@ const HomePage = () => {
           <h1 className="mainSection__h1--excPlan">
             Create customized excercise plans
           </h1>
+          <img className="mainSection__img--excPlan" src={bannerExc} />
         </div>
       </article>
     </section>

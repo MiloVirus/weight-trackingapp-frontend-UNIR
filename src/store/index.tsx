@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import userReducer from './UserSlice'
 import UserDataSlice from "./UserDataSlice";
 import ExcerciseSlice from "./ExcerciseSlice";
+import UserExcerciseSlice from "./UserExcerciseSlice";
 
 const store = configureStore(
     {
@@ -9,6 +10,7 @@ const store = configureStore(
             user: userReducer,
             userData: UserDataSlice,
             excercisesData: ExcerciseSlice,
+            userExcercisesData: UserExcerciseSlice
         }
     })
 
