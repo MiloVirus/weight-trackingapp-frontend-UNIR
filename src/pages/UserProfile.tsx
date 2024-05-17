@@ -26,7 +26,7 @@ const UserProfile = () => {
       <div className="userContainer__div--userPanel">
         {activeComponent === "userPanel" && <UserPanel/>}
         {activeComponent === "userData" && <UserData/>}
-        {activeComponent === "excercisePanel" && <ExcercisePanel />}
+        {activeComponent === "excercisePanel" && <ExcercisePanel/>}
       </div>
         
         

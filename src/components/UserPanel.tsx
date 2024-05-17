@@ -13,9 +13,6 @@ const UserPanel = () => {
 
   let currentDate = new Date().toJSON().slice(0, 10)
   const dispatch = useAppDispatch()
-  const userDataSelector = useSelector((state: RootState) => state.userData.data);
-  const lastWeight = userDataSelector.slice(-1)
-
   const [dayWeight, setDayWeight] = useState(0)
 
   useEffect(() => {
@@ -23,8 +20,11 @@ const UserPanel = () => {
     dispatch(getUserData())
     dispatch(getExcercisesData())
     dispatch(getUserExcercisesData())
-  
+    
   }, [])
+
+  const userDataSelector = useSelector((state: RootState) => state.userData.data);
+  const lastWeight = userDataSelector.slice(-1)
   
   const sendInput = () =>
     {

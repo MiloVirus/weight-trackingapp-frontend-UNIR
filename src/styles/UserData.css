@@ -1,0 +1,9 @@
+.userDataContainer
+{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    margin-top: 60px;
+    justify-content: center;
+}

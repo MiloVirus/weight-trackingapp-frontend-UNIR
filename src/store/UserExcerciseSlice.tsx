@@ -118,7 +118,7 @@ const UserExcercisesSlice = createSlice({
                 const deletedExerciseId = action.meta.arg; // Extract the deleted exercise ID from the action meta
                 state.userExcercises = state.userExcercises.filter(
                 exercise => exercise.id !== deletedExerciseId
-    );
+                );
                 state.error = null;
             })
             .addCase(deleteUserExcercise.rejected, (state, action) => {
