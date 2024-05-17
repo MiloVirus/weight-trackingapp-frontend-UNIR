@@ -1,11 +1,7 @@
 import "../styles/UserNav.css"
-import useToggleHook from '../hooks/useToggleHook'
 import { Link } from 'react-router-dom';
 
 const GuestNav = () => {
-
-const [active] = useToggleHook(false)
-
   return (
     <>
     <div className="container">

@@ -33,7 +33,7 @@ export const getUserData = createAsyncThunk<myObject[]>("data/getUserData", asyn
     }
 })
 
-export const postUserData = createAsyncThunk<myObject, object>("data/postUserData", async(data, thunkAPI)=>
+export const postUserData = createAsyncThunk<myObject, object>("data/postUserData", async(data)=>
     {
         try {
             const response: AxiosResponse = await axios.post(URL_AUTH, data);

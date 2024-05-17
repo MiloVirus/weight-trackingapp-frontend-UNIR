@@ -13,7 +13,7 @@ interface componentProps
 }
 
 
-export const ExcerciseCard: React.FC<componentProps> = ({id, name, description, difficulty, muscle_groups, image_url, clickEvent, value, color}) => {
+export const ExcerciseCard: React.FC<componentProps> = ({id, name, image_url, clickEvent, value, color}) => {
 
   return (
     <>
@@ -24,10 +24,7 @@ export const ExcerciseCard: React.FC<componentProps> = ({id, name, description, 
         <div className='exerciseCard__buttonContainer'>
           <button style={{ backgroundColor:`${color}` }} onClick={()=> clickEvent({
             id,
-            name, 
-            description,
-            difficulty,
-            muscle_groups, 
+            name,  
             image_url, 
             clickEvent})} className='excerciseCard__button'>{value}</button>
         </div>

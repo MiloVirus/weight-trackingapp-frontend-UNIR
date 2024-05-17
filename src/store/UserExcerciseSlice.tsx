@@ -3,6 +3,7 @@ import axios, { AxiosResponse }from "axios";
 
 interface userExcercisesResponse
 {
+    exId: number;
     id: number,
     name: String,
     description: String,
@@ -25,7 +26,7 @@ const initialState: dataState = {
     error: null,
 };
 
-const URL_AUTH = `http://localhost:3000/userExcercises/1`;
+const URL_AUTH = `https://6637b430288fedf69381191f.mockapi.io/auth/login/userExercises`;
 
 export const getUserExcercisesData = createAsyncThunk<userExcercisesResponse[]>("userExcercises/getUserExcercisesData", async()=>
 {
@@ -40,9 +41,11 @@ export const getUserExcercisesData = createAsyncThunk<userExcercisesResponse[]>(
 
 export const postUserExcercise = createAsyncThunk<userExcercisesResponse, object>(
     "userExcercises/postUserExcercise",
-    async (data, thunkAPI) => {
+    async (data) => {
       try {
         const response = await axios.post(URL_AUTH, data);
+        console.log(data)
+        console.log(response)
         return response.data;
       } catch (error) {
         
@@ -53,7 +56,7 @@ export const postUserExcercise = createAsyncThunk<userExcercisesResponse, object
 
   export const deleteUserExcercise = createAsyncThunk<userExcercisesResponse, number>(
     "userExcercises/deleteUserExcercise",
-    async (id, thunkAPI) => {
+    async (id) => {
       try {
         const response = await axios.delete(`${URL_AUTH}/${id}`);
         return response.data; 

@@ -3,6 +3,7 @@ import axios from "axios";
 
 interface excercisesResponse
 {
+    exId: number;
     id: number,
     name: String,
     description: String,
@@ -24,7 +25,7 @@ const initialState: dataState = {
     error: null,
 };
 
-const URL_AUTH = `http://localhost:3000/excercises`;
+const URL_AUTH = `https://run.mocky.io/v3/59960331-b9fa-4db2-b407-0963a0abd60a`;
 
 export const getExcercisesData = createAsyncThunk<excercisesResponse[]>("excercises/getExcercisesData", async()=>
 {

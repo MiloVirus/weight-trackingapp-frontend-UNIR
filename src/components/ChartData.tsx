@@ -1,11 +1,9 @@
-import { RootState } from "../store"
-import { useSelector } from "react-redux"
 import { useEffect } from "react"
 
 const ChartData = () => {
     
     useEffect(() => {
-        const userDataSelector = useSelector((state: RootState)=> state.userData.data)
+        //const userDataSelector = useSelector((state: RootState)=> state.userData.data)
     }, [])
     
 }

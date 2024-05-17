@@ -9,7 +9,7 @@ interface componentProps
 }
 
 
-export const ExcerciseCategoryCard: React.FC<componentProps> = ({name, description, difficulty, muscle_groups, image_url}) => {
+export const ExcerciseCategoryCard: React.FC<componentProps> = ({name, image_url}) => {
 
   return (
     <>

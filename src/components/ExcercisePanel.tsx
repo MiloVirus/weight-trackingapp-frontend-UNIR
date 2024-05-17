@@ -6,7 +6,8 @@ import { deleteUserExcercise, postUserExcercise } from "../store/UserExcerciseSl
 import { useAppDispatch } from "../hooks/reduxHooks"
 
 interface ExerciseData {
-  id: number;
+  name: string;
+  id: number
 }
 
 const ExcercisePanel = () => {
@@ -18,7 +19,7 @@ const ExcercisePanel = () => {
     const handleAddExcercise = (data:object) =>
       {
         const exerciseData = data as ExerciseData;
-        const findIt = userExcercisesData.find(element => element.id === exerciseData.id)
+        const findIt = userExcercisesData.find(element => element.name === exerciseData.name)
         console.log(findIt)
         if(findIt)
           {
@@ -29,9 +30,6 @@ const ExcercisePanel = () => {
             dispatch(postUserExcercise(data))
           }
       }
-
-      
-      
       
       const deleteExcercise = (data: object) => {
         const exerciseData = data as ExerciseData;
