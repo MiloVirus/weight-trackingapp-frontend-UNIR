@@ -34,7 +34,7 @@ const handleDeleteData = (data:number) =>
                 <td>
                   <b>{element.weight}</b>(kg)
                 </td>
-                <td>21.60</td>
+                <td><b>{(element.weight / 1.77 **2).toFixed(2)}</b></td>
                 <td>
                   <button onClick={()=>handleDeleteData(element.id)} className="tableContainer__button">Delete</button>
                 </td>

@@ -44,3 +44,21 @@
     color: rgb(29, 29, 29);
     text-align: center;
 }
+
+@media only screen and (max-width: 481px) {
+    .excerciseCard
+    {
+        color: rgb(255, 255, 255);
+        height: 130px;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 315px) {
+    .excerciseCard
+    {
+        color: rgb(255, 255, 255);
+        height: 130px;
+        width: 100%;
+    }
+}
