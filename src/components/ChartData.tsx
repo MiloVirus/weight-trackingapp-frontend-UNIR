@@ -1,3 +1,5 @@
+/* import { RootState } from "../store"
+import { useSelector } from "react-redux"
 import { useEffect } from "react"
 
 const ChartData = () => {
@@ -29,4 +31,4 @@ export const lineChartData =
         }
         
     ]
-}
+} */

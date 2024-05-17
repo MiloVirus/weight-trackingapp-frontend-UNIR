@@ -20,7 +20,7 @@ const initialState: dataState = {
     error: null,
 };
 
-const URL_AUTH = `${import.meta.env.VITE_URL_API}/auth/login/userWeight`;
+const URL_AUTH = `https://6637b430288fedf69381191f.mockapi.io/auth/login/userWeight`;
 
 export const getUserData = createAsyncThunk<myObject[]>("data/getUserData", async()=>
 {
