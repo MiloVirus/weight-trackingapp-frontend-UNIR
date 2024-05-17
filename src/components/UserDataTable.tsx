@@ -8,6 +8,8 @@ const UserDataTable = () => {
 
 const dispatch = useAppDispatch()
 const userData = useSelector((state: RootState) => state.userData.data);
+const reversedData = [...userData].reverse()
+console.log(reversedData)
 
 const handleDeleteData = (data:number) => 
     {
@@ -27,7 +29,7 @@ const handleDeleteData = (data:number) =>
           </tr>
         </thead>
         <tbody>
-          {userData.map((element, index) => {
+          {reversedData.map((element, index) => {
             return (
               <tr key={index}>
                 <td>{element.date}</td>
